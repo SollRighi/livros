@@ -1,0 +1,7 @@
+.Style {
+  color: black;
+  font-size: 50px;
+}
+
+@media (max-width: 400px) {
+}
