@@ -5,14 +5,18 @@ import { useEffect } from "react";
 import api from "../service/api";
 
 export default function PaginaListagemLivros() {
-  useEffect(() => {
-    api.get("/volumes", { params: { q: "ring" } });
-  }, []);
+  // useEffect(() => {
+  //   api.get("/volumes", { params: { q: "ring" } });
+  // }, []);
+
+  function pesquisarLivro(descricao: string) {
+    api.get("/volumes", { params: { q: descricao } });
+  }
 
   return (
     <div className="App">
       <Titulo />
-      <Pesquisar />
+      <Pesquisar pesquisar={pesquisarLivro} />
     </div>
   );
 }
