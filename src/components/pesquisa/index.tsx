@@ -1,15 +1,16 @@
 import { Input } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
-
+import "./index.css";
 export default function Pesquisar() {
   return (
-    <div className="Style">
+    <div className="StylePesquisar">
       <Input
         variant="flushed"
         placeholder="Pesquise um livro"
-        width={"800px"}
-        margin={"50px"}
+        _placeholder={{ color: "white" }}
+        color={"white"}
+        width="auto"
       />
       <IconButton
         colorScheme="blue"

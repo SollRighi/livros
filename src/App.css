@@ -9,9 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Shantell Sans", cursive;
-  font-family: "Tilt Warp", cursive;
+  font-family: "Lora", serif;
   padding: 10px;
+  background-image: url(./images/books.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 @media (max-width: 400px) {
